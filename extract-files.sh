@@ -73,6 +73,9 @@ function blob_fixup {
             xxd -p "${2}" | sed "s/90b0034e88740b9/90b003428028052/g" | xxd -r -p > "${2}".patched
             mv "${2}".patched "${2}"
             ;;
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|\
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+           "$PATCHELF" --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "$2"
     esac
 }
 
