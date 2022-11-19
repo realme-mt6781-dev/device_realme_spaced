@@ -77,6 +77,9 @@ function blob_fixup {
         vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+            "$PATCHELF" --replace-needed android.hardware.power-V2-ndk_platform.so android.hardware.power-V2-ndk.so "$2"
+            ;;
     esac
 }
 
