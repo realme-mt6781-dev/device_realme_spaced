@@ -94,6 +94,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
 
+# Cgroup
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor \
@@ -336,9 +341,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Public libraries
 PRODUCT_COPY_FILES += \
