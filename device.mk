@@ -385,10 +385,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6781 \
     fstab.mt6781_ramdisk \
     init.ago.rc \
-    init.cgroup.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6781.rc \
+    init.mt6781.power.rc \
     init.mt6781.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
