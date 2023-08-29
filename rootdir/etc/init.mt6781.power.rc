@@ -1,5 +1,8 @@
 on init
 
+    # Disable UFS powersaving
+    write /sys/devices/platform/11270000.ufshci/clkgate_enable 0
+
  # Create energy-aware scheduler tuning nodes
     mkdir /dev/stune/foreground
     mkdir /dev/stune/background
@@ -56,6 +59,9 @@ on init
     write /dev/stune/top-app/schedtune.boost 1
 
 on enable-low-power
+    # Enable UFS powersaving
+    write /sys/devices/platform/11270000.ufshci/clkgate_enable 1
+
     write /proc/cpufreq/cpufreq_sched_disable 0
     write /proc/sys/kernel/sched_migration_cost_ns 200000
 
