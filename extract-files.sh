@@ -80,6 +80,10 @@ function blob_fixup {
             ;;
         odm/lib*/libui)
             "$PATCHELF" --replace-needed android.hardware.graphics.common-V2-ndk_platform.so android.hardware.graphics.common-V2-ndk.so "$2"
+            ;;
+        vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
     esac
 }
 
