@@ -1927,6 +1927,8 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+-vendor/lib64/vendor.mediatek.hardware.power@1.1.so
+-vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Camera Feature Policy - from RMX3085EEA_11_C.11
 vendor/lib64/libmtkcam_featurepolicy.so|c539aa55b40a60ac82a9f5791b0e82cc331ec2fa|54a902eb3c3ef3518b806fc0732f0af49f537500
@@ -2476,7 +2478,6 @@ vendor/lib/libfgauge_gm30.so
 bin/vtservice
 etc/init/init.vtservice.rc
 lib/libmtk_vt_wrapper.so
-lib/libmtkperf_client.so
 lib/libvcodec_cap.so
 lib/libvsim-adaptor-client.so
 lib64/libcomutils.so
@@ -2486,7 +2487,6 @@ lib64/libimsma_rtp.so
 lib64/libimsma_socketwrapper.so
 lib64/libmtk_vt_service.so
 lib64/libmtk_vt_wrapper.so
-lib64/libmtkperf_client.so
 lib64/libsignal.so
 lib64/libsink.so
 lib64/libsource.so
@@ -2778,26 +2778,6 @@ vendor/lib64/libstorage_otp.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
-# Power
-odm/etc/powerhal/power_app_cfg.xml
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/bootperf.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib/libperfctl_vendor.so
-vendor/lib/libpower_timer.so
-vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib64/libmtkperf_client_vendor.so
-vendor/lib64/libperfctl_vendor.so
-vendor/lib64/libpower_timer.so
-vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
-vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-
 # RPMB
 odm/lib/librpmbengclient.so
 odm/lib64/librpmbengclient.so
@@ -2876,7 +2856,6 @@ vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtknetutils.so
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libmtkproperty.so
 vendor/lib/libmtkrillog.so
 vendor/lib/libmtkshifter_vendor.so
