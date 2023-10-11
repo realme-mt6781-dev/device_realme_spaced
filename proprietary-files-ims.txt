@@ -8,11 +8,11 @@ framework/mediatek-gwsdv2.jar
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
 -framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-base.jar|6611b6ba53194ae230b844548c9e48e92c59f26a
 -framework/mediatek-telephony-common.jar
 framework/mediatek-wfo-legacy.jar
 -framework/oplus-framework.jar
 -framework/oplus-framework-telephony.jar
 
 # Patched ImsService
--priv-app/ImsService/ImsService.apk|a4c9a3ed45fc0ab5dbf5c66aff684f77e45e309c
+-priv-app/ImsService/ImsService.apk|f6522c2e3061dd1e6101d52ef5c2033ad3e939d9
