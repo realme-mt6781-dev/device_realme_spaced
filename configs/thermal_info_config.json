@@ -152,6 +152,26 @@
       "Type": "COMPONENT"
     },
     {
+      "Name": "mt6359dcxo-sysrst",
+      "Type": "COMPONENT"
+    },
+    {
+      "Name": "mt6359tsx-sysrst",
+      "Type": "COMPONENT"
+    },
+    {
+      "Name": "mt6359vcore-sysrst",
+      "Type": "COMPONENT"
+    },
+    {
+      "Name": "mt6359vgpu-sysrst",
+      "Type": "COMPONENT"
+    },
+    {
+      "Name": "mt6359vproc-sysrst",
+      "Type": "COMPONENT"
+    },
+    {
       "Name": "mtktscharger-sysrst",
       "Type": "COMPONENT"
     },
