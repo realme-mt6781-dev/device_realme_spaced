@@ -35,9 +35,6 @@ genfscon sysfs /devices/platform/13000000.mali/js_ctx_scheduling_mode u:object_r
 genfscon sysfs /devices/platform/13000000.mali/js_scheduling_period u:object_r:vendor_sysfs_gpu:s0
 genfscon sysfs /devices/platform/13000000.mali/dvfs_period u:object_r:vendor_sysfs_gpu:s0
 
-# NFC
-genfscon proc /oplus_nfc/chipset                    u:object_r:vendor_proc_nfc_chipset:s0
-
 # OTG
 genfscon sysfs /devices/virtual/oplus_chg/usb/otg_switch u:object_r:vendor_sysfs_otg_switch:s0
 

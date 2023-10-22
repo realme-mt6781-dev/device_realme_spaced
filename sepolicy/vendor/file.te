@@ -33,9 +33,6 @@ type sysfs_mtk_gpufreq, fs_type, sysfs_type;
 # PPS
 type pps_socket, file_type;
 
-# NFC
-type vendor_proc_nfc_chipset, fs_type, proc_type;
-
 # OTG
 type vendor_sysfs_otg_switch, fs_type, sysfs_type;
 
