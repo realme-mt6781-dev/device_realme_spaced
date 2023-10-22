@@ -7,5 +7,7 @@
 soong_namespace {
     imports: [
         "hardware/oplus",
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
     ]
 }
