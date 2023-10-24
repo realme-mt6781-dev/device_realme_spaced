@@ -419,6 +419,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
+    hardware/google/interfaces \
+    hardware/oplus
 
 # Thermal
 PRODUCT_PACKAGES += \
