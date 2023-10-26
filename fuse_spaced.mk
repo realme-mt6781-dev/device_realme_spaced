@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/spaced/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common fuseOS stuff.
+$(call inherit-product, vendor/fuse/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_spaced
+PRODUCT_NAME := fuse_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_spaced.mk
+    $(LOCAL_DIR)/fuse_spaced.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_spaced-user \
-    lineage_spaced-userdebug \
-    lineage_spaced-eng
+    fuse_spaced-user \
+    fuse_spaced-userdebug \
+    fuse_spaced-eng
