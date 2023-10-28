@@ -80,6 +80,9 @@ function blob_fixup {
         vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
+		vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
+			sed -i 's/1.1/1.2/' "$2"
+			;;
     esac
 }
 
