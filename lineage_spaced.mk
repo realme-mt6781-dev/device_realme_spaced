@@ -12,7 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/rising/config/rising.mk)
+
+# Additional Stuff
+RISING_CHIPSET := MT6781
+RISING_MAINTAINER := HELLINFIX
+INLINE_KERNEL_BUILDING := true
+WITH_GMS := true
+TARGET_PREBUILT_SOUND_MODEL := true
+TARGET_PREBUILT_PIXEL_LAUNCHER := false
+TARGET_ENABLE_BLUR := false
 
 PRODUCT_NAME := lineage_spaced
 PRODUCT_DEVICE := spaced
