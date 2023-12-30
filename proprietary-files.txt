@@ -2230,7 +2230,7 @@ odm/firmware/awinic_haptic_params.bin
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
+-odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
 odm/lib/hw/fingerprint.goodix_G2.default.so
 odm/lib/hw/fingerprint.goodix_G3.default.so
 odm/lib/hw/fingerprint.goodix_G5.default.so
@@ -2263,6 +2263,8 @@ odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libgf_hal_G7.so
 odm/lib64/libsl_fp_impl.so
+odm/lib64/hw/fpsensor_fingerprint.default.so
+odm/lib64/hw/sidefp_fingerprint.default.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/init.oplus.fingerprints.rc
